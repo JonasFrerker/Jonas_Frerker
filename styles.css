@@ -1,0 +1,427 @@
+/*
+Author: Jonas Frerker
+Date: 09.11.2025
+File Name: styles.css
+*/
+
+body, header, nav, main, footer, h1, div,  img, ul {   
+	margin: 0;  
+	padding: 0;  
+	border: 0;    
+}
+
+body {
+	background-color: rgb(21, 220, 220); 
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+header {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+	top: 0;
+	background-color: rgb(21, 220, 220);
+    width: auto;
+    text-align: center;
+}
+
+header img{
+	 margin: 0 auto;
+}
+
+nav {
+    font-weight: bolder;
+	margin-bottom: 1%;
+	padding: 1%;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li{
+	font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    border-top:  1px solid #fff;
+}
+
+nav li a{
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-decoration: none;
+}
+
+main {
+	clear: left;
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.35em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+main a {
+    text-decoration: none;
+    color: rgb(23, 0, 128);
+    display:inline-block;
+}
+
+#offering table caption {
+	font-size: 1.5em;  
+	padding: 10px 5px;  
+}
+
+#offering td { 
+    text-align: center; 
+} 
+
+#offering table, th, td {
+	border: none; 
+} 
+
+@media screen and (min-width: 630px) {
+
+	header {
+	position: static;  
+	padding-bottom: 2%;
+	max-height: 120px;
+	}
+
+	nav li {  
+		border-top: none;
+		display: inline-block; 
+	 	border-right:  1px solid #fff;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		padding: 0.1em 0.75em;	
+	}
+
+	#about ul {
+		list-style: none;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	form {   
+		width: 70%;
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+	
+	header {
+		max-width: 15%;
+		max-height: 10%;
+		float: left;
+		padding-bottom: 0;
+	}
+
+	nav {
+		float: right;  
+		width: 70%;
+		margin: 4em 1em  0 0;
+	}
+
+	nav ul {
+		text-align: right; 
+	}
+	
+	nav li {
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+
+	main {
+		clear: left;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+
+	main {
+		clear: left;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+
+	#gmap_canvas {
+		width:500px;
+		height:600px;
+	}
+
+	form {
+		width: auto;  
+	}
+	
+	.form-grid {  
+		display: grid;
+		grid-template-columns: auto;  
+		gap: 20px;
+	}
+	
+	.btn   {
+		grid-column: 1 / span 3;  
+	}
+	
+}
+
+#contact {
+	text-align: center;
+}
+
+#about {
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
+
+#about ul {
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+#about li{
+	padding:  0.5% 1% 2% 0;
+}
+
+#offering table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  #offering caption {
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  #offering td {
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  .services-img,
+  .static-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;      
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    transition: none !important;
+    transform: none !important;
+  }
+  
+    @media (max-width: 640px) {
+    #offering table {
+      display: block;
+    }
+    #offering tr {
+      display: block;
+    }
+    #offering td {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+    }
+  }
+
+  .team-img,
+  .static-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;      
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+
+  }
+  
+    @media (max-width: 640px) {
+    #staff table {
+      display: block;
+    }
+    #staff tr {
+      display: block;
+    }
+    #staff td {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+    }
+  }
+
+.order_button {
+	background-color: rgb(21, 220, 220); 
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 23px;
+	font-weight: bolder;
+}
+
+.related-articles {
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    background-color: #f7fbff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .related-articles h4 {
+    font-size: 1.5em;
+    color: rgb(3, 3, 3);
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .related-articles ul {
+    list-style-type: disc;
+    padding-left: 25px;
+  }
+  
+  .related-articles li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  .related-articles a {
+    color: rgb(21, 220, 220);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+  
+  .related-articles a:hover {
+    color: rgb(21, 220, 220);
+    text-decoration: underline;
+  }
+
+.order_button a {
+	text-decoration: none;
+	color: white;
+}
+
+.oneline {
+	display: inline;
+}
+
+.adress {
+	color: rgb(21, 220, 220);
+	display: inline;
+}
+
+.trading {
+	color: rgb(21, 220, 220);
+	display: inline;
+}
+
+.tel-link {
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+.offer {
+    margin-top: 1%;
+    color: rgb(21, 220, 220);
+	text-decoration: none;
+    text-align: center;
+	font-size: 1.5em;
+	display: block;
+}
+
+.offer_li {
+	color: rgb(21, 220, 220);
+	font-weight: bold;
+}
+
+#form {
+	position: relative;
+	margin-top: 2%;
+	background-color: #f2f2f2;
+	padding: 2%;
+}
+
+#form h3 {
+	text-align: center;
+}
+
+fieldset, input,  select, textarea {
+	align-self: center;
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em; 
+  }
+
+label { 
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+footer p {
+	font-size: 0.98em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
