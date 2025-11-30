@@ -193,6 +193,15 @@ main a {
 	text-align: center;
 }
 
+#contact ul {
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+#contact li{
+	padding:  0.5% 1% 2% 0;
+}
+
 #about {
 	clear: left;
 	border-top: 1px solid #000;
